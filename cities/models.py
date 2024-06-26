@@ -3,7 +3,7 @@ from django.conf import settings
 from django.db import models
 
 
-class Sities(models.Model):
+class Cities(models.Model):
     """Модель Городов."""
 
     name = models.CharField(max_length=settings.MAX_NAME_SITIES_LENGTH)

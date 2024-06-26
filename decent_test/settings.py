@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'regions.apps.RegionsConfig',
     'cities.apps.CitiesConfig',
+    'contractors.apps.ContractorsConfig',
 ]
 
 MIDDLEWARE = [
@@ -92,6 +93,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # project constants
 EMPTY_VALUE = "-пусто-"
+MAX_NAME_CONTRACTORS_LENGTH = 32
 MAX_NAME_REGION_LENGTH = 32
 MAX_NAME_SITIES_LENGTH = 32
 MAX_REGION_SITIES_LENGTH = 32

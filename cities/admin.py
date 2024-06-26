@@ -2,11 +2,11 @@
 from django.conf import settings
 from django.contrib import admin
 
-from .models import Sities
+from .models import Cities
 
 
-@admin.register(Sities)
-class SitiesAdmin(admin.ModelAdmin):
+@admin.register(Cities)
+class CitiesAdmin(admin.ModelAdmin):
     """Админ зона Городов."""
 
     list_display = ('name', 'region')
