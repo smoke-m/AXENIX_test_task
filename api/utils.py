@@ -6,7 +6,7 @@ from contractors.models import Contractors
 
 
 def create_xls_file():
-    """"Создание xls файла из БД"""
+    """"Создание xls файла из БД."""
 
     arr = []
     query = Contractors.objects.filter(decent=False)
@@ -33,3 +33,11 @@ def create_xls_file():
 
     file_path = os.path.join(directory, 'data.xls')
     workbook.save(file_path)
+
+
+def check_decent_status():
+    """Проверка статуса поставщика."""
+
+    query = Contractors.objects.all()
+    arr_inn = [obj.inn for obj in query]
+    print(arr_inn)
