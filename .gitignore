@@ -162,3 +162,5 @@ cython_debug/
 #.idea/
 
 files/
+celerybeat-schedule.db
+dump.rdb

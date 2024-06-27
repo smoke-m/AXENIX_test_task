@@ -2,6 +2,8 @@
 import os
 import xlwt
 
+from celery import shared_task
+
 from contractors.models import Contractors
 
 
@@ -41,3 +43,9 @@ def check_decent_status():
     query = Contractors.objects.all()
     arr_inn = [obj.inn for obj in query]
     print(arr_inn)
+
+
+@shared_task
+def test_cel():
+    obj = Contractors.objects.get(pk=1)
+    print(f'!!!{obj.name}!!!')

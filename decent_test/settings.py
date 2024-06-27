@@ -98,3 +98,19 @@ MAX_NAME_CONTRACTORS_LENGTH = 32
 MAX_NAME_REGION_LENGTH = 32
 MAX_NAME_SITIES_LENGTH = 32
 MAX_REGION_SITIES_LENGTH = 32
+
+
+# CELERY
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'UTC'
+
+CELERY_BEAT_SCHEDULE = {
+    'test_cel': {
+        'task': 'api.utils.test_cel',
+        'schedule': 10.0,  # каждые 10 секунд
+    },
+}
