@@ -92,7 +92,7 @@ c.	Наименование региона
 
 - добавлен ендпоинт для получения таблицы.
 
-Отправте POST запрос на апи сервиса с "email" в body:
+Отправте POST запрос на API сервиса с "email" в body:
 
-    api/contractors/test_action/
+    api/contractors/get_xls/
     JSON: {"email": "admin@yandex.ru"}

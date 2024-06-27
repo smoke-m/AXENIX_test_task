@@ -9,7 +9,7 @@ from decent_test.send_mesage import sender
 class ContractorsViewSet(viewsets.GenericViewSet):
     """Вьсюсет для Contractors."""
 
-    @action(detail=False, url_path='test_action', methods=('post',))
+    @action(detail=False, url_path='get_xls', methods=('post',))
     def create_cloudpayment(self, request):
         """Тестовый Action Contractors."""
         try:
