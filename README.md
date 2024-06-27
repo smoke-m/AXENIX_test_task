@@ -44,3 +44,29 @@ c.	Наименование региона
 6.	*Направить Excel файл ответственному сотруднику по email.
 
 дополнительные задачки. Выполнение по желанию
+
+
+В проекте использовались технологии:
+Python 3.10.0
+SQlite3
+Django==4.2
+djangorestframework==3.14.0
+xlwt==1.3.0
+redis==5.0.7
+celery==5.4.0
+requests==2.31.0
+
+запуск проекта:
+git clone git@github.com:smoke-m/AXENIX_test_task.git
+python -m venv venv
+source venv/Scripts/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+
+Сделайте скрипт исполняемым:
+chmod +x run_all.sh
+
+Запуск:
+./run_all.sh
