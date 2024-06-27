@@ -10,6 +10,7 @@ import requests
 from requests.exceptions import HTTPError, RequestException
 
 from contractors.models import Contractors
+from decent_test.send_mesage import sender
 
 
 def create_xls_file():
@@ -83,5 +84,6 @@ def test_cel():
     try:
         check_decent_status()
         create_xls_file()
+        sender()
     except Exception as error:
         print(error)
