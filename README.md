@@ -46,27 +46,44 @@ c.	Наименование региона
 дополнительные задачки. Выполнение по желанию
 
 
-В проекте использовались технологии:
-Python 3.10.0
-SQlite3
-Django==4.2
-djangorestframework==3.14.0
-xlwt==1.3.0
-redis==5.0.7
-celery==5.4.0
-requests==2.31.0
+## В проекте использовались технологии:
 
-запуск проекта:
-git clone git@github.com:smoke-m/AXENIX_test_task.git
-python -m venv venv
-source venv/Scripts/activate
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-python manage.py makemigrations
-python manage.py migrate
+- Python 3.10.0
+- SQlite3
+- Django==4.2
+- djangorestframework==3.14.0
+- xlwt==1.3.0
+- redis==5.0.7
+- celery==5.4.0
+- requests==2.31.0
+
+### Как запустить проект:
+
+Клонируйте репозиторий и перейдите к нему в командной строке:
+
+    git clone git@github.com:smoke-m/AXENIX_test_task.git
+
+    cd AXENIX_test_task
+
+Создайте и активируйте venv:
+
+    python -m venv env
+    source venv/Scripts/activate
+
+Установите зависимости из файла requirements.txt:
+
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+
+Создайте и выполните миграции:
+
+    python manage.py makemigrations
+    python manage.py migrate
 
 Сделайте скрипт исполняемым:
-chmod +x run_all.sh
+
+    chmod +x run_all.sh
 
 Запуск:
-./run_all.sh
+
+    ./run_all.sh
