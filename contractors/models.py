@@ -22,4 +22,4 @@ class Contractors(models.Model):
         on_delete=models.CASCADE,
         related_name='contractor',
     )
-    decent = models.BooleanField()
+    decent = models.CharField(max_length=settings.MAX_DECENT_LENGTH)

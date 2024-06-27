@@ -98,7 +98,10 @@ MAX_NAME_CONTRACTORS_LENGTH = 32
 MAX_NAME_REGION_LENGTH = 32
 MAX_NAME_SITIES_LENGTH = 32
 MAX_REGION_SITIES_LENGTH = 32
+MAX_DECENT_LENGTH = 64
 
+# URL API серверра ofdata
+URL_OFDATA = 'https://api.ofdata.ru/v2/person?key=API-ключ&inn={}'
 
 # CELERY
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
